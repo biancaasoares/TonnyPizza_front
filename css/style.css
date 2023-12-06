@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    background-image: url(../img/pizza_back-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    font-family: 'Roboto', sans-serif;
+    gap: 100px;
+}
+
+
+/* .overlay{
+    background: linear-gradient(180deg, rgba(252,121,0,0.85) 35%, rgba(252,1221,0,0) 100%);
+    width: 100vw;
+    height: 100vh;
+} */
+
+body::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(360deg, #fff0 0%, var(--cor-principal) 100%);
+    inset: 0;
+    z-index: -1;
+}
+
+header {
+    height: 150px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 100px;
+    align-items: center;
+}
+
+.conteudo-container {
+    color: #fff;
+}
+
+.conteudo-container h1 {
+    width: 230px;
+}
+
+.conteudo-container p {
+    width: 300px;
+}

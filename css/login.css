@@ -1,0 +1,67 @@
+body {
+    background-image: url(/img/pizza_back-1.webp);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    padding: 32px 32px;
+    color: #fff;
+    gap: 24px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(360deg, #fff0 0%, #f27706 100%);
+    inset: 0;
+    z-index: -1;
+}
+
+.info-container {
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input {
+    padding: 12px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px white;
+    width: 300px;
+}
+
+.login {
+    font-size: 12px;
+    text-align: center;
+}
+
+.esquecisenha {
+    text-align: right;
+}
+
+.registro-container {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.botao {
+    align-self: center;
+}
+
+.login h2 {
+    text-shadow: 1px 2px 2px black;
+}
